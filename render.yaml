@@ -1,0 +1,32 @@
+# Despliegue en Render (https://render.com): "New + → Blueprint" y selecciona este repositorio.
+# El disco persistente guarda la base de datos, la clave y los comprobantes. Requiere un plan de pago con disco.
+services:
+  - type: web
+    name: fipo
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    envVars:
+      - key: FIPO_SECRET
+        generateValue: true
+      - key: FIPO_DATA_DIR
+        value: /data
+      - key: FIPO_HTTPS
+        value: "1"
+      # Avisos por correo (opcional): llena estos valores en el panel de Render
+      - key: FIPO_SMTP_HOST
+        sync: false
+      - key: FIPO_SMTP_PORT
+        sync: false
+      - key: FIPO_SMTP_USER
+        sync: false
+      - key: FIPO_SMTP_PASS
+        sync: false
+      - key: FIPO_SMTP_FROM
+        sync: false
+      - key: FIPO_PUBLIC_URL
+        sync: false
+    disk:
+      name: fipo-data
+      mountPath: /data
+      sizeGB: 1

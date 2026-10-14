@@ -1,0 +1,8 @@
+# Lo mismo que requirements.txt menos gunicorn: PythonAnywhere usa su propio servidor web.
+# (Si agregas una dependencia a requirements.txt, agrégala aquí también.)
+Flask>=3.0
+openpyxl>=3.1
+pdfplumber>=0.10
+reportlab>=4.0
+Pillow>=10.0
+cryptography>=41.0      # avisos push (cifrado Web Push); ya venía con pdfplumber

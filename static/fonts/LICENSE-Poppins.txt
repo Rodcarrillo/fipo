@@ -1,0 +1,4 @@
+Poppins — Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Full license text: https://openfontlicense.org/open-font-license-official-text/
+Archivos incluidos: subconjunto latino (regular, medium, bold) en formato WOFF.

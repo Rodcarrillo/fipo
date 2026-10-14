@@ -1,0 +1,31 @@
+{
+  "name": "FIPO — Finanzas Personales Ordenadas",
+  "short_name": "FIPO",
+  "description": "Finanzas personales: cuentas, movimientos, tarjetas, deudas, presupuestos, metas, portafolio y análisis.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F6F3EB",
+  "theme_color": "#F6F3EB",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/static/icons/icon-192.png?v=4",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512.png?v=4",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512-maskable.png?v=4",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

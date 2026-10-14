@@ -1,0 +1,11 @@
+# Uso local con Docker:  docker compose up --build   →  http://localhost:8000
+services:
+  fipo:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      FIPO_HTTPS: "0"
+      FIPO_SECRET: "cambia-esta-clave-larga-y-privada"
+    volumes: ["fipo-data:/data"]
+volumes:
+  fipo-data:

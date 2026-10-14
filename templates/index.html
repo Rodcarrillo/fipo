@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F6F3EB" id="meta-theme">
+  <title>FIPO</title>
+  <link rel="icon" href="/static/favicon.svg?v=4" type="image/svg+xml">
+  <link rel="manifest" href="/static/manifest.webmanifest?v=4">
+  <!-- iOS no lee bien manifest.webmanifest para el ícono/modo de pantalla completa: hace falta esto aparte -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png?v=4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- «default»: el iPhone dibuja la hora y la pila en su propia franja (claro u oscuro según el sistema) y la app empieza debajo: nada se encima ni se corta -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FIPO">
+  <!-- antes del CSS: aplica tu tema guardado (claro/oscuro) para que la pantalla de carga ya tenga el color correcto -->
+  <script src="/static/boot.js?v=20"></script>
+  <link rel="stylesheet" href="/static/style.css?v=20">
+  <link rel="stylesheet" href="/static/widgets.css?v=20">
+  <!-- iOS muestra esta imagen mientras abre FIPO: solo el color de fondo (sin logo), para que la única pantalla de carga sea la de FIPO y no haya destello blanco -->
+  <link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1320x2868-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1206x2622-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1260x2736-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1290x2796-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1179x2556-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1284x2778-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1170x2532-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1125x2436-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1242x2688-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-828x1792-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-1242x2208-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) and (prefers-color-scheme: light)" href="/static/splash/splash-750x1334-light.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1320x2868-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1206x2622-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1260x2736-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1290x2796-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1179x2556-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1284x2778-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1170x2532-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1125x2436-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1242x2688-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-828x1792-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-1242x2208-dark.png?v=2">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) and (prefers-color-scheme: dark)" href="/static/splash/splash-750x1334-dark.png?v=2">
+</head>
+<body>
+  <!-- Pantalla de carga: se ve desde el primer instante (sin esperar al JavaScript) y app.js la quita cuando FIPO está lista -->
+  <div id="splash" aria-hidden="true"><div class="splash-in">
+    <svg class="logo-word" viewBox="0 0 316 110" role="img" aria-label="FIPO" fill="currentColor">
+      <g stroke="currentColor" stroke-width="4" stroke-linejoin="round">
+        <path d="M4 5H66V27H28V44H60V66H28V105H4Z"/><path d="M84 5H108V105H84Z"/>
+        <path fill-rule="evenodd" d="M128 5H168a34 34 0 0 1 0 68H152V105H128ZM152 27V51H166a12 12 0 0 0 0-24Z"/></g>
+      <circle class="o-disc" cx="262" cy="55" r="50"/>
+      <path class="o-leaf" d="M246 76C242 52 256 36 282 33C285 58 270 74 246 76Z"/>
+      <path class="o-vein" d="M247 74C256 62 266 50 276 40" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+    <p class="splash-tag">Finanzas Personales Ordenadas</p>
+    <div class="splash-line"></div></div></div>
+  <div id="app" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <div id="toasts" role="status" aria-live="polite"></div>
+  <noscript><p style="padding:2rem">FIPO necesita JavaScript para funcionar.</p></noscript>
+  <script src="/static/core.js?v=20"></script>
+  <script src="/static/extra.js?v=20"></script>
+  <script src="/static/more.js?v=20"></script>
+  <script src="/static/notify.js?v=20"></script>
+  <script src="/static/widgets.js?v=20"></script>
+  <script src="/static/app.js?v=20"></script>
+</body>
+</html>
